@@ -1,0 +1,186 @@
+/* 
+=========================================================================
+*** CSS Information *** 
+=========================================================================
+
+Peter Vang 
+Blue42 Coding Challenge
+Detail: For this challenge you will have 24 hours to create a website for 
+		a local web agency called Elite Media Design (EMD). 
+Written: 05/08/2020
+Revised: 05/08/2020 Added external CSS
+
+=========================================================================
+*** Web Page Configuration *** 
+=========================================================================
+*/
+
+body {
+	background-attachment: fixed;
+	background-image: url("https://files.123freevectors.com/wp-content/original/119446-abstract-light-blue-background-graphic-design.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	font-family: 'Montserrat';
+}
+
+#content {
+	margin: auto;
+	width: 70%;
+}
+
+.container {
+	position: relative;
+
+}
+
+.text-block {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background-color: black;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*
+=========================================================================
+*** Navigation Bar *** 
+=========================================================================
+*/
+.navigationBar {
+	background-color: #002F6C;
+	overflow: hidden;
+}
+
+.navigationBar a {
+	color: #FFFFFF;
+	float: left;
+	font-size: 16px;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigationBar .icon {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.navigationBar a:not(:first-child) {
+		display: none;
+	}
+
+	.navigationBar a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.navigationBar.responsive {
+		position: relative;
+	}
+
+	.navigationBar.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.navigationBar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+.dropDown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropDown .dropButton {
+	background-color: inherit;
+	border: none;
+	color: #FFFFFF;
+	font-family: inherit;
+	font-size: 16px;
+	margin: 0;
+	outline: none;
+	padding: 14px 16px;
+}
+
+.navigationBar a:hover,
+.dropDown:hover .dropButton {
+	background-color: #F0AD4E;
+}
+
+.dropDown-content {
+	background-color: #002F6C;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	display: none;
+	min-width: 160px;
+	position: absolute;
+	z-index: 1;
+}
+
+.dropDown-content a {
+	color: #FFFFFF;
+	display: block;
+	float: none;
+	padding: 12px 16px;
+	text-align: left;
+	text-decoration: none;
+}
+
+.dropDown-content a:hover {
+	background-color: #F0AD4E;
+}
+
+.dropDown:hover .dropDown-content {
+	display: block;
+}
+
+/*
+=========================================================================
+*** Footer Bar *** 
+=========================================================================
+*/
+footer {
+	background: #002F6C;
+	clear: both;
+	color: #FFFFFF;
+	padding: 20px;
+	text-align: right;
+}
+
+#footerHorizontal {
+	background-color: #002F6C;
+	color: #F0AD4E;
+	font-size: 12pt;
+	list-style-type: none;
+	margin: -10px;
+	float: right;
+	overflow: hidden;
+	padding: 0;
+}
+
+.footerList {
+	float: left;
+}
+
+.footerList a {
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footerList a:hover {
+	color: #F0AD4E;
+}
+
+.noHover {
+	pointer-events: none;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+	body {
+		font-family: 'Montserrat';
+	}
+
+</style>
+
+<body>
+	<div id="content">
+		<div id="top"></div>
+		<header>
+			<img src="graphic/image2vector.svg" alt="test1" width="100px" height="100px" style="float:left">
+			<br><br>
+			<h1>Elite Media Design</h1>
+			<div class="navigationBar" id="mynavigationBar">
+				<a href="index.html">Home</a>
+				<div class="dropDown">
+					<button class="dropButton" href="services.html">Services</button>
+					<div class="dropDown-content">
+						<a href="services.html">Ecommerce</a>
+						<a href="services.html">Email Marking</a>
+						<a href="services.html">Graphic Design</a>
+						<a href="services.html">Photography</a>
+						<a href="services.html">SEO</a>
+						<a href="services.html">Videography</a>
+					</div>
+				</div>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</header>
+
+		<h2>Contact Us</h2>
+		<hr>
+		<p>
+			<b>Elite Media Design (EMD)</b>
+			<br>
+			80 S 8th St, Suite #005
+			<br>
+			Minneapolis, MN 55402
+			<br><br>
+			763-123-1234
+			<br>
+			info@elitemediadesign.com
+			<br><br>
+		</p>
+		<form class="contactMeBox">
+			<input type="hidden" name="action" value="submit">
+			Name:<br>
+			<input name="name" type="text" value="" size="40" /><br><br>
+			Email:<br>
+			<input name="email" type="text" value="" size="40" /><br><br>
+			Phone:<br>
+			<input name="phone" type="text" value="" size="40" /><br><br>
+			Subject:<br>
+			<input name="subject" type="text" value="" size="40" /><br><br>
+			Message:<br>
+			<textarea name="message" rows="10" cols="50">Write something...</textarea><br><br>
+			<input type="submit" value="Submit" /><br><br>
+		</form>
+		<footer>
+			<ul id="footerHorizontal">
+				<li class="footerList"><a>&copy; 2020 Elite Media Design</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li class="footerList">&nbsp;|&nbsp;<a href="index.html">Home</a></li>
+				<li class="footerList">&nbsp;|&nbsp;<a href="about.html">About</a></li>
+				<li class="footerList">&nbsp;|&nbsp;<a href="contact.html">Contact</a></li>
+				<li class="footerList">&nbsp;|&nbsp;<a href="#top">Top Page</a></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
